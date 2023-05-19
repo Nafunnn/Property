@@ -5,10 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <title>Document</title>
   </head>
-  <body>
+  <style>
+    :root {
+      --text-color: black;
+      --background-color: white;
+    }
+    .content {
+      color: var(--text-color);
+      background-color: var(--background-color);
+    }
+  </style>
+  <body class="content">
     <!-- NAVBAR -->
     <section class="">
       <nav class="bg-white border-gray-200">
@@ -164,7 +182,7 @@
         <h1 class="text-5xl font-bold text-black">Popular Residences.</h1>
       </div>
       <!-- CARD -->
-      <div class="grid md:grid-cols-4 mx-12 gap-12 mb-12">
+      <div class="grid md:grid-cols-4 mx-12 gap-12">
         <div class="rounded-md justify-items-center hover:scale-105 duration-300">
           <img class="rounded-md h-52 mb-4 mx-auto" src="/img/Japanese.png" alt="" />
           <h1 class="text-lg font-bold text-yellow-500">$ 6.400</h1>
@@ -226,42 +244,78 @@
       </div>
     </section>
     <!-- CONTENT-3 -->
-    <section class="bg-white">
+    <section class="bg-white my-12">
       <div class="mx-12 text-black">
         <div class="grid md:grid-cols-2 gap-4">
-          <div class="my-auto order-1 md:order-2 flex">
+          <div class="order-1 md:order-2 flex">
             <div class="mt-8">
               <h1 class="text-2xl font-semibold">Our Value</h1>
               <h1 class="text-4xl font-bold">Value We Give To You.</h1>
               <p class="mt-8 opacity-75">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolores laboriosam adipisci
-                repudiandae ipsum temporibus ducimus qui quia! Praesentium suscipit consequuntur inventore
-                asperiores, ipsam veritatis.
+                We always ready to help by providing the best service for you, we belive a good place to live
+                can make your life better .
               </p>
               <!-- COLLAPSE -->
-              <div class="rounded-md">
-                <div class="collapse border-2 border-black">
-                  <input type="checkbox" class="peer" />
-                  <div class="collapse-title rounded-t-lg bg-white text-black">
-                    Click me to show/hide content
+              <div class="m-6">
+                <div class="rounded-md shadow-lg my-2">
+                  <div class="collapse rounded-md">
+                    <input type="checkbox" class="peer" />
+                    <div class="collapse-title rounded-t-lg text-blue-800 font-semibold">
+                      <i class="fi fi-rr-star py-1 px-1.5 bg-blue-100 rounded-sm mr-4"></i>
+                      Best interest rates on the market
+                    </div>
+                    <div class="collapse-content bg-white text-black border-blue-500">
+                      <p class="opacity-75">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis libero
+                        consequatur molestias harum maxime officiis adipisci nam. Beatae, qui repellat.
+                      </p>
+                    </div>
                   </div>
-                  <div class="collapse-content bg-white text-black">
-                    <p>hello</p>
+                </div>
+                <div class="rounded-md shadow-lg my-2">
+                  <div class="collapse rounded-md">
+                    <input type="checkbox" class="peer" />
+                    <div class="collapse-title rounded-t-lg text-blue-800 font-semibold">
+                      <i class="fi fi-rr-tags py-1 px-1.5 bg-blue-100 rounded-sm mr-4"></i>
+                      Prevent unstable prices
+                    </div>
+                    <div class="collapse-content bg-white text-black border-blue-500">
+                      <p class="opacity-75">
+                        Prices we provide is the best for you, we guarantee no price changes on your property
+                        due to various unrxpected costs that may come.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="grid-cols-3 grid mx-12 my-12 gap-4">
-                <div class="space-y-2">
-                  <h1 class="text-3xl font-bold text-center">9<span class="text-blue-400">+</span></h1>
-                  <p class="text-sm opacity-75 text-center">Premium Product</p>
+                <div class="rounded-md shadow-lg my-2">
+                  <div class="collapse rounded-md">
+                    <input type="checkbox" class="peer" />
+                    <div class="collapse-title rounded-t-lg text-blue-800 font-semibold">
+                      <i class="fi fi-rr-label py-1 px-1.5 bg-blue-100 rounded-sm mr-4"></i>
+                      Best price on the market
+                    </div>
+                    <div class="collapse-content bg-white text-black border-blue-500">
+                      <p class="opacity-75">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis libero
+                        consequatur molestias harum maxime officiis adipisci nam. Beatae, qui repellat.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="space-y-2">
-                  <h1 class="text-3xl font-bold text-center">2<span class="text-blue-400">+</span></h1>
-                  <p class="text-sm opacity-75 text-center">Premium Product</p>
-                </div>
-                <div class="space-y-2">
-                  <h1 class="text-3xl font-bold text-center">28<span class="text-blue-400">+</span></h1>
-                  <p class="text-sm opacity-75 text-center">Premium Product</p>
+                <div class="rounded-md shadow-lg my-2">
+                  <div class="collapse rounded-md">
+                    <input type="checkbox" class="peer" />
+                    <div class="collapse-title rounded-t-lg text-blue-800 font-semibold">
+                      <i class="fi fi-rr-shield-check py-1 px-1.5 bg-blue-100 rounded-sm mr-4"></i>
+                      Security of your data
+                    </div>
+                    <div class="collapse-content bg-white text-black border-blue-500">
+                      <p class="opacity-75">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis libero
+                        consequatur molestias harum maxime officiis adipisci nam. Beatae, qui repellat.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -272,6 +326,118 @@
         </div>
       </div>
     </section>
+    <!-- CONTENT-4 -->
+    <section class="bg-white">
+      <div class="mx-12 text-black">
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="order-2 md:order-1">
+            <div class="mt-8">
+              <h1 class="text-2xl font-semibold">Contact Us</h1>
+              <h1 class="text-4xl font-bold">Easy To Contact Us.</h1>
+              <p class="mt-8 opacity-75">
+                Is there a problem finding your dream home? Need a guide in buying your first home ? Or need a
+                consultation on residential issues? Just contact us.
+              </p>
+            </div>
+            <!-- CARD -->
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-12 justify-items-center">
+              <div class="mt-6">
+                <div class="flex">
+                  <i
+                    class="fi fi-rr-phone-call text-blue-700 text-2xl px-3 py-1.5 bg-blue-100 rounded-md"
+                  ></i>
+                  <div class="ml-4">
+                    <h1 class="font-bold">Call</h1>
+                    <p>Lorem, ipsum.</p>
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <a
+                    class="bg-blue-100 text-center rounded-sm font-bold text-blue-700 py-3 px-20 hover:bg-blue-700 hover:text-white duration-300"
+                    href=""
+                    >Call Here</a
+                  >
+                </div>
+              </div>
+              <div class="mt-6">
+                <div class="flex">
+                  <i
+                    class="fi fi-rr-comment-alt text-blue-700 text-2xl px-3 py-1.5 bg-blue-100 rounded-md"
+                  ></i>
+                  <div class="ml-4">
+                    <h1 class="font-bold">Chat</h1>
+                    <p>Lorem, ipsum.</p>
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <a
+                    class="bg-blue-100 text-center rounded-sm font-bold text-blue-700 py-3 px-20 hover:bg-blue-700 hover:text-white duration-300"
+                    href=""
+                    >Chat Here</a
+                  >
+                </div>
+              </div>
+              <div class="mt-6">
+                <div class="flex">
+                  <i
+                    class="fi fi-rr-video-camera-alt text-blue-700 text-2xl px-3 py-1.5 bg-blue-100 rounded-md"
+                  ></i>
+                  <div class="ml-4">
+                    <h1 class="font-bold">Video Call</h1>
+                    <p>Lorem, ipsum.</p>
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <a
+                    class="bg-blue-100 text-center rounded-sm font-bold text-blue-700 py-3 px-14 hover:bg-blue-700 hover:text-white duration-300"
+                    href=""
+                    >Video Call Here</a
+                  >
+                </div>
+              </div>
+              <div class="mt-6">
+                <div class="flex">
+                  <i class="fi fi-rr-envelope text-blue-700 text-2xl px-3 py-1.5 bg-blue-100 rounded-md"></i>
+                  <div class="ml-4">
+                    <h1 class="font-bold">Message</h1>
+                    <p>Lorem, ipsum.</p>
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <a
+                    class="bg-blue-100 text-center rounded-sm font-bold text-blue-700 py-3 px-16 hover:bg-blue-700 hover:text-white duration-300"
+                    href=""
+                    >Message Here</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mx-auto my-auto flex md:order-1">
+            <img class="aspect-auto w-80 rounded-t-2xl m-4" src="/img/property.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="mx-12 my-12 bg-blue-700 rounded-lg">
+        <div class="mx-24">
+          <h1 class="text-white text-4xl font-bold text-center pt-12">Lorem ipsum dolor sit amet.</h1>
+        </div>
+        <p class="text-white mt-6 text-center opacity-75">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur hic sit similique, illum
+          repellat ratione eaque reiciendis maiores placeat ullam.
+        </p>
+        <div class="flex justify-center items-center my-12">
+          <a
+            class="px-5 py-2 border-2 border-white rounded-md bg-blue-500 text-white font-semibold hover:bg-white hover:text-blue-600 duration-300"
+            href=""
+            >Get Started</a
+          >
+        </div>
+        <h1 class="text-blue-700">.</h1>
+      </div>
+    </section>
+    <!-- CONTENT-5 -->
+
     <!-- FOOTER -->
 
     <footer class="bg-white dark:bg-gray-900">
